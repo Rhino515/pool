@@ -1,47 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Pool Drill Trainer</title>
 
-<link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
-<header>
 <h1>🎱 Pool Drill Trainer</h1>
-<p>Track your practice and improve faster</p>
-</header>
-
-<main>
 
 <div class="stats">
 
 <div class="card">
-<h3>Rank</h3>
-<p id="rank">Beginner</p>
+Rank
+<div id="rank">Beginner</div>
 </div>
 
 <div class="card">
-<h3>XP</h3>
-<p id="xp">0</p>
+XP
+<div id="xp">0</div>
 </div>
 
 <div class="card">
-<h3>Streak</h3>
-<p id="streak">0</p>
+Streak
+<div id="streak">0</div>
 </div>
 
 </div>
 
 <h2>Drills</h2>
 
-<div id="drills"></div>
+<div id="drillList"></div>
 
-</main>
+<div id="drillModal" class="modal hidden">
+
+<div class="modalContent">
+
+<h2 id="drillTitle"></h2>
+
+<img id="drillImage" class="diagram">
+
+<p id="drillDesc"></p>
+
+<div class="scoreButtons">
+
+<button id="good">✅</button>
+<button id="ok">⚠️</button>
+<button id="bad">❌</button>
+
+</div>
+
+<div id="attemptDots"></div>
+
+<button id="close">Close</button>
+
+</div>
+
+</div>
 
 <script src="app.js"></script>
 
