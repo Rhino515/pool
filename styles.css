@@ -1,34 +1,28 @@
 body{
-font-family: Arial;
 background:#0b0b0f;
 color:white;
-margin:0;
+font-family:Arial;
 padding:20px;
-}
-
-header{
-text-align:center;
-margin-bottom:30px;
 }
 
 .stats{
 display:flex;
 gap:20px;
-justify-content:center;
 margin-bottom:30px;
 }
 
 .card{
-background:#15151f;
-padding:15px 25px;
+background:#1a1a24;
+padding:15px;
 border-radius:10px;
+width:120px;
 text-align:center;
 }
 
-#drills{
+#drillList{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .drill{
@@ -38,11 +32,57 @@ border-radius:10px;
 }
 
 button{
-padding:10px;
-border:none;
-border-radius:6px;
 background:#4f7cff;
+border:none;
 color:white;
-cursor:pointer;
+padding:10px;
+border-radius:6px;
 margin-top:10px;
+cursor:pointer;
 }
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(0,0,0,.8);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.modalContent{
+background:#111;
+padding:20px;
+border-radius:10px;
+width:350px;
+}
+
+.hidden{
+display:none;
+}
+
+.diagram{
+width:100%;
+border-radius:8px;
+margin:10px 0;
+}
+
+#attemptDots{
+display:flex;
+gap:5px;
+margin:10px 0;
+}
+
+.dot{
+width:12px;
+height:12px;
+background:#333;
+border-radius:3px;
+}
+
+.dot.good{background:#3cff7c}
+.dot.ok{background:#ffe44d}
+.dot.bad{background:#ff4f6d}
